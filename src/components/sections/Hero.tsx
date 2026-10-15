@@ -50,7 +50,7 @@ export function Hero() {
           <div className="overflow-hidden rounded-[2.5rem] bg-white shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)]">
             <img src="/illustrations/travelers.svg" alt="" className="block w-full" />
           </div>
-          <div className="absolute -bottom-6 left-1/2 w-full max-w-[280px] -translate-x-1/2 sm:-bottom-10 sm:left-0 sm:translate-x-0">
+          <div className="absolute -bottom-6 left-1/2 w-full max-w-[280px] -translate-x-1/2 sm:-bottom-10 sm:-left-10 sm:translate-x-0">
             <RouteCardMock />
           </div>
         </div>
