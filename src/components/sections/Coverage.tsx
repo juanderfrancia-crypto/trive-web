@@ -3,8 +3,10 @@ import { Reveal } from '../Reveal'
 export function Coverage() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
-      <Reveal className="grid items-center gap-10 rounded-3xl bg-trive-primary px-6 py-12 shadow-[0_32px_64px_-24px_rgba(8,45,102,0.45)] sm:px-12 lg:grid-cols-2">
-        <div>
+      <Reveal className="relative grid items-center gap-10 overflow-hidden rounded-3xl bg-trive-primary px-6 py-12 shadow-[0_32px_64px_-24px_rgba(8,45,102,0.45)] sm:px-12 lg:grid-cols-2">
+        <img src="/photos/coverage-bg.jpg" alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover" />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-trive-primary/85" />
+        <div className="relative z-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[11px] font-bold text-white">
             Dónde operamos hoy
           </span>
@@ -13,7 +15,7 @@ export function Coverage() {
             Trive está en una etapa inicial, conectando a quienes viajan entre Puerto Tejada y Cali, y sus alrededores. La idea es llegar a más rutas a medida que la comunidad crece.
           </p>
         </div>
-        <ul className="grid grid-cols-2 gap-3">
+        <ul className="relative z-10 grid grid-cols-2 gap-3">
           {['Puerto Tejada', 'Cali'].map((city) => (
             <li key={city} className="flex items-center gap-2 rounded-2xl bg-white/10 px-4 py-3.5 text-sm font-bold text-white">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

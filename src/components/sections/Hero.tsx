@@ -1,6 +1,13 @@
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-trive-primary">
+      <img
+        src="/photos/hero-bg.jpg"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+      />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-trive-primary/85" />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-trive-light/30 blur-3xl"
@@ -10,15 +17,22 @@ export function Hero() {
         className="pointer-events-none absolute -left-32 bottom-0 h-80 w-80 rounded-full bg-trive-darkest/40 blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-6xl gap-16 px-5 pb-40 pt-20 sm:px-8 sm:pb-56 sm:pt-28 lg:grid-cols-2 lg:items-center">
+      <div className="relative mx-auto grid max-w-6xl gap-16 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-2 lg:items-center">
         <div>
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-bold text-white">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z" />
-              <circle cx="12" cy="10" r="2.5" />
-            </svg>
-            Puerto Tejada ↔ Cali
-          </span>
+          <div className="flex items-center gap-3">
+            <img
+              src="/photos/hero-bg-thumb.jpg"
+              alt="Conductor y pasajero compartiendo un viaje"
+              className="h-14 w-14 shrink-0 rounded-2xl border-2 border-white/40 object-cover shadow-lg"
+            />
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-bold text-white">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              Puerto Tejada ↔ Cali
+            </span>
+          </div>
 
           <h1 className="mt-5 text-4xl font-extrabold leading-tight tracking-tight text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-5xl">
             Publica tu ruta.
@@ -46,60 +60,16 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-lg">
-          <div className="overflow-hidden rounded-[2.5rem] bg-white shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)]">
-            <img src="/illustrations/travelers.svg" alt="" className="block w-full" />
-          </div>
-          <div className="absolute -bottom-16 left-1/2 w-full max-w-[280px] -translate-x-1/2 sm:-bottom-32 sm:-left-20 sm:translate-x-0">
-            <RouteCardMock />
+        <div className="relative mx-auto w-full max-w-xl">
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-10 -bottom-10 h-16 rounded-full bg-black/50 blur-3xl"
+          />
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-white shadow-[0_10px_15px_-3px_rgba(5,15,40,0.4),0_30px_40px_-10px_rgba(5,15,40,0.55),0_70px_120px_-25px_rgba(5,15,40,0.65)]">
+            <img src="/photos/hero-card.jpg" alt="Pasajero viajando en el trayecto compartido" className="block w-full" />
           </div>
         </div>
       </div>
     </section>
-  )
-}
-
-function RouteCardMock() {
-  return (
-    <div className="rounded-3xl border-2 border-trive-tint bg-white p-5 shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)]">
-      <div className="flex items-center justify-between">
-        <span className="rounded-full bg-trive-tint px-2.5 py-1 text-[11px] font-bold text-trive-primary">Hoy · 6:30 a.m.</span>
-        <span className="text-[11px] font-semibold text-text-muted">3 puestos</span>
-      </div>
-
-      <div className="mt-4 flex gap-3">
-        <div className="flex flex-col items-center pt-1.5">
-          <span className="h-2.5 w-2.5 rounded-full bg-trive-primary" />
-          <span className="my-1 h-10 w-px bg-border-subtle" />
-          <span className="h-2.5 w-2.5 rounded-full border-2 border-trive-primary bg-white" />
-        </div>
-        <div className="flex flex-1 flex-col justify-between">
-          <div>
-            <p className="text-sm font-bold text-text-primary">Puerto Tejada</p>
-            <p className="text-xs text-text-muted">Punto de encuentro acordado</p>
-          </div>
-          <div className="mt-3">
-            <p className="text-sm font-bold text-text-primary">Cali</p>
-            <p className="text-xs text-text-muted">Terminal · Centro</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-4 flex items-center justify-between rounded-2xl bg-surface-alt px-3.5 py-3">
-        <div className="flex items-center gap-2.5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-trive-primary text-xs font-bold text-white">JD</span>
-          <div>
-            <p className="text-xs font-bold text-text-primary">Juan D.</p>
-            <p className="flex items-center gap-1 text-[11px] text-text-muted">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="m12 2 2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.8L5.7 21l1.7-7-5.4-4.7 7.1-.6L12 2Z" />
-              </svg>
-              4.9 · Verificado
-            </p>
-          </div>
-        </div>
-        <span className="text-sm font-extrabold text-trive-primary">$18.000</span>
-      </div>
-    </div>
   )
 }

@@ -1,6 +1,7 @@
 import { Seo } from '../components/Seo'
 import { Hero } from '../components/sections/Hero'
 import { HowItWorks } from '../components/sections/HowItWorks'
+import { AppPreview } from '../components/sections/AppPreview'
 import { Trust } from '../components/sections/Trust'
 import { Coverage } from '../components/sections/Coverage'
 import { Faq } from '../components/sections/Faq'
@@ -17,6 +18,7 @@ export function HomePage() {
       />
       <Hero />
       <HowItWorks />
+      <AppPreview />
       <Trust />
       <Coverage />
       <Faq />

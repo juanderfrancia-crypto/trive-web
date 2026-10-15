@@ -33,8 +33,11 @@ export function DownloadCta() {
       />
 
       <div className="relative mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-2 lg:items-center">
-        <div className="mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] bg-white p-6 shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)] lg:order-1">
-          <img src="/illustrations/maker-launch.svg" alt="" className="block w-full" />
+        <div className="mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-[2rem] bg-white shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)] lg:order-1">
+          <div className="grid h-full grid-cols-2">
+            <img src="/photos/download-left.jpg" alt="" className="h-full w-full object-cover" />
+            <img src="/photos/download-right.jpg" alt="" className="h-full w-full object-cover" />
+          </div>
         </div>
 
         <div className="text-center lg:order-2 lg:text-left">
