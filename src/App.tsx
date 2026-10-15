@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ScrollToTop } from './components/ScrollToTop'
+import { BackToTopButton } from './components/BackToTopButton'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { HomePage } from './pages/HomePage'
@@ -23,6 +24,7 @@ export default function App() {
         </main>
         <Footer />
       </div>
+      <BackToTopButton />
     </BrowserRouter>
   )
 }
