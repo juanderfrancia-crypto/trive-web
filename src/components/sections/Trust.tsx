@@ -2,19 +2,17 @@ const ITEMS = [
   {
     title: 'Conductores verificados',
     body: 'Antes de habilitar a un conductor para publicar, revisamos su licencia de conducción y los documentos del vehículo: SOAT y tecnomecánica vigentes.',
-    icon: <path d="M9 12 11 14 15.5 9.5M12 3 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-3Z" />,
+    illustration: '/illustrations/certificate.svg',
   },
   {
     title: 'Calificación en cada viaje',
     body: 'Conductores y pasajeros se califican mutuamente al terminar el trayecto, así que el historial de cada perfil es real.',
-    icon: (
-      <path d="m12 3 2.6 5.9 6.4.6-4.8 4.2 1.5 6.3L12 16.9 6.3 20l1.5-6.3-4.8-4.2 6.4-.6L12 3Z" />
-    ),
+    illustration: '/illustrations/leave-a-review.svg',
   },
   {
     title: 'Chat dentro de la app',
     body: 'Coordinen el punto de encuentro y los detalles del viaje sin tener que compartir su número de celular.',
-    icon: <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z" />,
+    illustration: '/illustrations/chatting.svg',
   },
 ]
 
@@ -36,15 +34,15 @@ export function Trust() {
           {ITEMS.map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl bg-surface p-6 shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)] transition-transform duration-200 hover:-translate-y-1"
+              className="overflow-hidden rounded-3xl border border-border-subtle bg-surface shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)] transition-transform duration-200 hover:-translate-y-1"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-trive-tint text-trive-primary">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  {item.icon}
-                </svg>
+              <div className="flex h-36 items-center justify-center bg-trive-tint/50">
+                <img src={item.illustration} alt="" className="h-28 w-auto object-contain" />
               </div>
-              <h3 className="mt-4 text-lg font-bold text-text-primary">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-text-secondary">{item.body}</p>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-text-primary">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-text-secondary">{item.body}</p>
+              </div>
             </div>
           ))}
         </div>
