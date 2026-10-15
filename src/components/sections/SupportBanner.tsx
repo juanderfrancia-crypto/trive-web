@@ -8,7 +8,7 @@ export function SupportBanner() {
             Escríbenos directamente y te respondemos lo antes posible.
           </p>
           <a
-            href="mailto:privacy@trive.co"
+            href="mailto:privacy@trivesoft.com"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-trive-primary px-5 py-2.5 text-sm font-bold text-white transition-all duration-200 hover:bg-trive-dark"
           >
             Escríbenos

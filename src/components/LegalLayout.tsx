@@ -20,7 +20,7 @@ export function LegalLayout({ title, subtitle, date, children }: { title: string
         </svg>
         <div>
           <p className="text-xs font-bold text-text-secondary">Contacto</p>
-          <a href="mailto:privacy@trive.co" className="text-sm font-bold text-trive-primary">privacy@trive.co</a>
+          <a href="mailto:privacy@trivesoft.com" className="text-sm font-bold text-trive-primary">privacy@trivesoft.com</a>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ export function TermsPage() {
       </LegalSection>
 
       <LegalSection title="4. Registro y cuenta">
-        Eres responsable de mantener la confidencialidad de tu cuenta y de todas las actividades realizadas desde ella. Debes notificarnos de inmediato ante cualquier uso no autorizado escribiendo a privacy@trive.co.
+        Eres responsable de mantener la confidencialidad de tu cuenta y de todas las actividades realizadas desde ella. Debes notificarnos de inmediato ante cualquier uso no autorizado escribiendo a privacy@trivesoft.com.
       </LegalSection>
 
       <LegalSection title="5. Conductores">

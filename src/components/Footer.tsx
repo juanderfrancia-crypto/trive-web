@@ -35,7 +35,7 @@ export function Footer() {
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wide text-text-muted">Contacto</h3>
             <ul className="mt-3 space-y-2 text-sm">
-              <li><a href="mailto:privacy@trive.co" className="text-text-secondary hover:text-trive-primary">privacy@trive.co</a></li>
+              <li><a href="mailto:privacy@trivesoft.com" className="text-text-secondary hover:text-trive-primary">privacy@trivesoft.com</a></li>
               <li className="text-text-secondary">Cali, Colombia</li>
             </ul>
           </div>

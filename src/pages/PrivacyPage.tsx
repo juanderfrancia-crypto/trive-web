@@ -6,7 +6,7 @@ export function PrivacyPage() {
       <LegalSection title="1. Responsable del tratamiento">
         <p><strong className="text-text-primary">Trive Technologies SAS</strong></p>
         <p>Ciudad: Cali, Colombia</p>
-        <p>Correo: privacy@trive.co</p>
+        <p>Correo: privacy@trivesoft.com</p>
       </LegalSection>
 
       <LegalSection title="2. Datos personales que recopilamos">
@@ -57,7 +57,7 @@ export function PrivacyPage() {
           <li><strong className="text-text-primary">Acceder</strong> gratuitamente a tus datos personales.</li>
           <li><strong className="text-text-primary">Presentar quejas</strong> ante la Superintendencia de Industria y Comercio (SIC).</li>
         </ul>
-        <p className="mt-3">Para ejercer estos derechos escríbenos a <strong className="text-text-primary">privacy@trive.co</strong>. Responderemos dentro de los <strong className="text-text-primary">10 días hábiles</strong> siguientes a la recepción de tu solicitud, conforme al artículo 14 de la Ley 1581 de 2012.</p>
+        <p className="mt-3">Para ejercer estos derechos escríbenos a <strong className="text-text-primary">privacy@trivesoft.com</strong>. Responderemos dentro de los <strong className="text-text-primary">10 días hábiles</strong> siguientes a la recepción de tu solicitud, conforme al artículo 14 de la Ley 1581 de 2012.</p>
       </LegalSection>
 
       <LegalSection title="6. Transferencia de datos a terceros">
