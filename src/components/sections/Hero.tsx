@@ -61,7 +61,7 @@ export function Hero() {
 
 function RouteCardMock() {
   return (
-    <div className="rounded-3xl bg-white p-5 shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)]">
+    <div className="rounded-3xl border-2 border-trive-tint bg-white p-5 shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)]">
       <div className="flex items-center justify-between">
         <span className="rounded-full bg-trive-tint px-2.5 py-1 text-[11px] font-bold text-trive-primary">Hoy · 6:30 a.m.</span>
         <span className="text-[11px] font-semibold text-text-muted">3 puestos</span>
