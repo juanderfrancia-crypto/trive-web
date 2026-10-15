@@ -1,7 +1,7 @@
 export function Coverage() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
-      <div className="grid items-center gap-10 rounded-3xl bg-trive-primary px-6 py-12 sm:px-12 lg:grid-cols-2">
+      <div className="grid items-center gap-10 rounded-3xl bg-trive-primary px-6 py-12 shadow-[0_32px_64px_-24px_rgba(8,45,102,0.45)] sm:px-12 lg:grid-cols-2">
         <div>
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[11px] font-bold text-white">
             Dónde operamos hoy

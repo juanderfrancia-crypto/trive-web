@@ -14,7 +14,6 @@ export function HomePage() {
       <Trust />
       <Coverage />
       <Faq />
-      <div className="py-6" />
       <SupportBanner />
       <DownloadCta />
     </>

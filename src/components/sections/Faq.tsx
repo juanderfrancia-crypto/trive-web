@@ -36,7 +36,7 @@ export function Faq() {
         <h2 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Preguntas frecuentes</h2>
       </div>
 
-      <div className="mt-10 divide-y divide-border-subtle rounded-3xl border border-border-subtle bg-surface">
+      <div className="mt-10 divide-y divide-border-subtle rounded-3xl border border-border-subtle bg-surface shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)]">
         {FAQS.map((item, i) => {
           const isOpen = openIndex === i
           return (

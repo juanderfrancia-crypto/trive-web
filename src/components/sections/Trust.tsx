@@ -34,7 +34,10 @@ export function Trust() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
           {ITEMS.map((item) => (
-            <div key={item.title} className="rounded-3xl bg-surface p-6">
+            <div
+              key={item.title}
+              className="rounded-3xl bg-surface p-6 shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)] transition-transform duration-200 hover:-translate-y-1"
+            >
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-trive-tint text-trive-primary">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   {item.icon}
