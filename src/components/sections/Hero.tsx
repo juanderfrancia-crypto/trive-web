@@ -47,11 +47,9 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-lg">
-          <div
-            aria-hidden="true"
-            className="absolute left-1/2 top-[42%] h-[78%] w-[78%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/95 shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)]"
-          />
-          <img src="/illustrations/travelers.svg" alt="" className="relative w-full" />
+          <div className="overflow-hidden rounded-[2.5rem] bg-white shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)]">
+            <img src="/illustrations/travelers.svg" alt="" className="block w-full" />
+          </div>
           <div className="absolute -bottom-6 left-1/2 w-full max-w-[280px] -translate-x-1/2 sm:-bottom-10 sm:left-0 sm:translate-x-0">
             <RouteCardMock />
           </div>
