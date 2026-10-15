@@ -10,7 +10,7 @@ export function Hero() {
         className="pointer-events-none absolute -left-32 bottom-0 h-80 w-80 rounded-full bg-trive-darkest/40 blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-6xl gap-16 px-5 pb-28 pt-20 sm:px-8 sm:pb-36 sm:pt-28 lg:grid-cols-2 lg:items-center">
+      <div className="relative mx-auto grid max-w-6xl gap-16 px-5 pb-40 pt-20 sm:px-8 sm:pb-56 sm:pt-28 lg:grid-cols-2 lg:items-center">
         <div>
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-bold text-white">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -50,7 +50,7 @@ export function Hero() {
           <div className="overflow-hidden rounded-[2.5rem] bg-white shadow-[0_32px_64px_-12px_rgba(8,45,102,0.45)]">
             <img src="/illustrations/travelers.svg" alt="" className="block w-full" />
           </div>
-          <div className="absolute -bottom-6 left-1/2 w-full max-w-[280px] -translate-x-1/2 sm:-bottom-10 sm:-left-10 sm:translate-x-0">
+          <div className="absolute -bottom-16 left-1/2 w-full max-w-[280px] -translate-x-1/2 sm:-bottom-32 sm:-left-20 sm:translate-x-0">
             <RouteCardMock />
           </div>
         </div>
