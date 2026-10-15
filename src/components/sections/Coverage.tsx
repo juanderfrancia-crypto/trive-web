@@ -6,9 +6,9 @@ export function Coverage() {
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[11px] font-bold text-white">
             Dónde operamos hoy
           </span>
-          <h2 className="mt-4 text-2xl font-extrabold text-white sm:text-3xl">Puerto Tejada y Cali, por ahora</h2>
+          <h2 className="mt-4 text-2xl font-extrabold text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-3xl">Puerto Tejada y Cali, por ahora</h2>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-white/80">
-            Trive está en una etapa inicial, conectando a quienes viajan entre Puerto Tejada y Cali. La idea es llegar a más rutas a medida que la comunidad crece.
+            Trive está en una etapa inicial, conectando a quienes viajan entre Puerto Tejada y Cali, y sus alrededores. La idea es llegar a más rutas a medida que la comunidad crece.
           </p>
         </div>
         <ul className="grid grid-cols-2 gap-3">

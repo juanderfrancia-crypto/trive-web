@@ -6,12 +6,16 @@ const FAQS = [
     a: 'No. Trive es una plataforma tecnológica que conecta a personas que ya van a hacer un trayecto con otras que quieren ir al mismo lugar, para compartir el costo del viaje. No somos una empresa de transporte y no prestamos el servicio de movilidad.',
   },
   {
+    q: '¿Cómo reservo un cupo?',
+    a: 'Buscas tu ruta, ves los cupos disponibles en tiempo real, eliges el tuyo y confirmas la reserva al instante. Después usas el chat de la app para coordinar el punto exacto de encuentro con el conductor.',
+  },
+  {
     q: '¿Cómo se fija el precio del viaje?',
-    a: 'Lo acuerdan directamente el conductor y el pasajero dentro de la app. Trive no fija tarifas ni interviene en ese acuerdo.',
+    a: 'El conductor lo define libremente al publicar la ruta. El precio por cupo queda fijo desde la publicación — Trive no lo negocia ni lo cambia.',
   },
   {
     q: '¿Cómo se paga?',
-    a: 'El pago del trayecto se acuerda y se realiza directamente entre conductor y pasajero, por el medio que prefieran (efectivo, Nequi, Daviplata, etc.). Trive no retiene ni intermedia ese dinero.',
+    a: 'Le pagas directo al conductor, por el medio que haya habilitado (efectivo, Nequi, Daviplata, etc.). Trive no retiene ni intermedia ese dinero.',
   },
   {
     q: '¿Los conductores están verificados?',
@@ -19,7 +23,7 @@ const FAQS = [
   },
   {
     q: '¿Dónde está disponible Trive?',
-    a: 'Por ahora, en trayectos entre Puerto Tejada y Cali. Iremos sumando más rutas a medida que la comunidad crece.',
+    a: 'Por ahora, en trayectos entre Puerto Tejada y Cali, y sus alrededores. Iremos sumando más rutas a medida que la comunidad crece.',
   },
   {
     q: '¿Cuándo puedo descargar la app?',
@@ -33,7 +37,7 @@ export function Faq() {
   return (
     <section id="preguntas" className="mx-auto max-w-3xl px-5 py-20 sm:px-8">
       <div className="text-center">
-        <h2 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Preguntas frecuentes</h2>
+        <h2 className="text-3xl font-extrabold tracking-tight text-text-primary [text-shadow:0_1px_1px_rgba(15,26,46,0.08)] sm:text-4xl">Preguntas frecuentes</h2>
       </div>
 
       <div className="mt-10 divide-y divide-border-subtle rounded-3xl border border-border-subtle bg-surface shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)]">

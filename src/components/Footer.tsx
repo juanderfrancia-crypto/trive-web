@@ -11,7 +11,7 @@ export function Footer() {
               <span className="text-base font-extrabold text-text-primary">Trive</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-              Comparte tu ruta, comparte el gasto.
+              Publica tu ruta. Reserva tu cupo.
             </p>
           </div>
 

@@ -20,14 +20,14 @@ export function Hero() {
             Puerto Tejada ↔ Cali
           </span>
 
-          <h1 className="mt-5 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">
-            Comparte tu ruta.
+          <h1 className="mt-5 text-4xl font-extrabold leading-tight tracking-tight text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-5xl">
+            Publica tu ruta.
             <br />
-            Comparte el gasto.
+            Reserva tu cupo.
           </h1>
 
           <p className="mt-5 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">
-            Trive conecta a personas que ya van a hacer un trayecto con otras que quieren ir al mismo lugar, para repartir entre todos el costo del viaje.
+            Los conductores publican los trayectos que ya van a hacer, con cupos y precio fijo. Tú buscas, reservas tu cupo al instante y coordinas el encuentro por chat.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">

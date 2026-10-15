@@ -18,8 +18,8 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border-subtle bg-surface/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5 sm:px-8">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <img src="/trive-icon.png" alt="" width={32} height={32} className="rounded-lg" />
-          <span className="text-lg font-extrabold tracking-tight text-text-primary">Trive</span>
+          <img src="/trive-icon.png" alt="" width={44} height={44} className="rounded-lg" />
+          <span className="text-xl font-extrabold tracking-tight text-text-primary [text-shadow:0_1px_1px_rgba(15,26,46,0.08)]">Trive</span>
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">

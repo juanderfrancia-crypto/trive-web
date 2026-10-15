@@ -1,17 +1,17 @@
 const STEPS = [
   {
     title: 'Publica o busca tu ruta',
-    body: 'Los conductores publican trayectos que ya van a hacer. Los pasajeros buscan el que les sirve por fecha y lugar de encuentro.',
+    body: 'Los conductores publican su ruta con los cupos disponibles y el precio por cupo. Los pasajeros buscan la que les sirve por fecha, origen y destino.',
     illustration: '/illustrations/searching.svg',
   },
   {
-    title: 'Conecta y acuerden los detalles',
-    body: 'Hablen por el chat dentro de la app: punto de encuentro, hora y el valor que le corresponde a cada quien.',
+    title: 'Reserva tu cupo',
+    body: 'Eliges el cupo que te sirve y confirmas la reserva al instante, sin esperar a que el conductor acepte.',
     illustration: '/illustrations/chatting.svg',
   },
   {
     title: 'Viajen compartiendo el gasto',
-    body: 'El conductor ya iba a hacer ese trayecto. El pasajero aporta una parte justa del costo: combustible, peajes y desgaste.',
+    body: 'Le pagas directo al conductor el valor del cupo y coordinan el punto de encuentro por chat. Trive no cobra ni retiene ese pago.',
     illustration: '/illustrations/payments.svg',
   },
 ]
@@ -20,7 +20,7 @@ export function HowItWorks() {
   return (
     <section id="como-funciona" className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
       <div className="mx-auto max-w-xl text-center">
-        <h2 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Cómo funciona</h2>
+        <h2 className="text-3xl font-extrabold tracking-tight text-text-primary [text-shadow:0_1px_1px_rgba(15,26,46,0.08)] sm:text-4xl">Cómo funciona</h2>
         <p className="mt-3 text-text-secondary">Tres pasos, sin complicaciones.</p>
       </div>
 

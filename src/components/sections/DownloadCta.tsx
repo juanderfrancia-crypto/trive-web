@@ -45,7 +45,7 @@ export function DownloadCta() {
             Muy pronto en Google Play
           </span>
 
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">No te quedes por fuera del lanzamiento</h2>
+          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-4xl">No te quedes por fuera del lanzamiento</h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-white/80 sm:mx-0 sm:text-lg mx-auto">
             Estamos en la etapa final de pruebas. Déjanos tu correo y te avisamos apenas la app esté disponible para descargar.
           </p>

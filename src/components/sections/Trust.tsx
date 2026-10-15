@@ -22,7 +22,7 @@ export function Trust() {
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Confianza entre personas reales</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight text-text-primary [text-shadow:0_1px_1px_rgba(15,26,46,0.08)] sm:text-4xl">Confianza entre personas reales</h2>
             <p className="mt-3 max-w-md text-text-secondary">
               Trive no presta el servicio de transporte — son los conductores quienes lo hacen. Esto es lo que revisamos antes de que alguien pueda publicar una ruta.
             </p>
