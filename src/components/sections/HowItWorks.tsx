@@ -46,7 +46,7 @@ export function HowItWorks() {
             <img
               src={step.illustration}
               alt=""
-              className="pointer-events-none absolute -bottom-10 -right-12 w-48 opacity-35"
+              className="pointer-events-none absolute -right-8 -top-8 w-28 opacity-35"
             />
             <div className="relative">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-trive-tint text-trive-primary">
