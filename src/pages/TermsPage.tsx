@@ -1,8 +1,15 @@
+import { Seo } from '../components/Seo'
 import { LegalLayout, LegalSection } from '../components/LegalLayout'
 
 export function TermsPage() {
   return (
-    <LegalLayout title="Términos de Uso" date="6 de octubre de 2026">
+    <>
+      <Seo
+        title="Términos de uso — Trive"
+        description="Términos de uso de la plataforma Trive: cómo funciona la publicación de rutas, las reservas de cupo y la relación entre conductores y pasajeros."
+        path="/terminos"
+      />
+      <LegalLayout title="Términos de Uso" date="6 de octubre de 2026">
       <LegalSection title="1. Aceptación de los términos">
         Al descargar, instalar o utilizar la aplicación Trive, declaras haber leído, entendido y aceptado estos Términos de Uso en su totalidad. Si no estás de acuerdo con alguno de estos términos, debes abstenerte de utilizar la Plataforma.
       </LegalSection>
@@ -114,5 +121,6 @@ export function TermsPage() {
         Estos Términos se rigen por las leyes de la República de Colombia. Cualquier controversia se someterá a la jurisdicción de los jueces competentes de la ciudad de Cali, Colombia, sin perjuicio del derecho a acudir ante la Superintendencia de Industria y Comercio (SIC) como autoridad de protección al consumidor.
       </LegalSection>
     </LegalLayout>
+    </>
   )
 }

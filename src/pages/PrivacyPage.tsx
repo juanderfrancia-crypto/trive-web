@@ -1,8 +1,15 @@
+import { Seo } from '../components/Seo'
 import { LegalLayout, LegalSection } from '../components/LegalLayout'
 
 export function PrivacyPage() {
   return (
-    <LegalLayout title="Política de Privacidad" subtitle="Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013" date="20 de mayo de 2026">
+    <>
+      <Seo
+        title="Política de privacidad — Trive"
+        description="Cómo Trive recopila, usa y protege tus datos personales, conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia."
+        path="/privacidad"
+      />
+      <LegalLayout title="Política de Privacidad" subtitle="Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013" date="20 de mayo de 2026">
       <LegalSection title="1. Responsable del tratamiento">
         <p><strong className="text-text-primary">Jormelia Soft</strong></p>
         <p>Ciudad: Cali, Colombia</p>
@@ -99,5 +106,6 @@ export function PrivacyPage() {
         .
       </div>
     </LegalLayout>
+    </>
   )
 }

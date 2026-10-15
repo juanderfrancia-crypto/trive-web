@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
+import { Seo } from '../components/Seo'
 
 export function NotFoundPage() {
   return (
     <div className="mx-auto flex max-w-xl flex-col items-center px-5 py-20 text-center sm:px-8">
+      <Seo title="Página no encontrada — Trive" description="El enlace puede estar roto o la página ya no existe." path="/404" noindex />
       <img src="/illustrations/no-signal.svg" alt="" className="w-full max-w-[240px]" />
       <h1 className="mt-6 text-2xl font-extrabold tracking-tight text-text-primary sm:text-3xl">No encontramos esta página</h1>
       <p className="mt-3 text-sm leading-relaxed text-text-secondary">
