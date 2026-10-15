@@ -42,7 +42,11 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-border-subtle pt-6 text-xs text-text-muted">
-          © {new Date().getFullYear()} Jormelia Soft. Trive es una plataforma tecnológica de intermediación; no es una empresa de transporte.
+          © {new Date().getFullYear()} Jormelia Soft. Trive es un producto de{' '}
+          <a href="https://jormeliasoft.com" target="_blank" rel="noreferrer" className="font-semibold text-text-secondary hover:text-trive-primary">
+            Jormelia Soft
+          </a>{' '}
+          y es una plataforma de reserva de cupos que conecta conductores y pasajeros para compartir trayectos y gastos de viaje.
         </div>
       </div>
     </footer>
