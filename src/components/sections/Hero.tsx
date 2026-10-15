@@ -47,7 +47,7 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-lg">
-          <img src="/illustrations/order-ride.svg" alt="" className="w-full" />
+          <img src="/illustrations/travelers.svg" alt="" className="w-full" />
           <div className="absolute -bottom-6 left-1/2 w-full max-w-[280px] -translate-x-1/2 sm:-bottom-10 sm:left-0 sm:translate-x-0">
             <RouteCardMock />
           </div>
