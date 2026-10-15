@@ -29,7 +29,7 @@ export function Trust() {
               Trive no presta el servicio de transporte — son los conductores quienes lo hacen. Esto es lo que revisamos antes de que alguien pueda publicar una ruta.
             </p>
           </div>
-          <img src="/illustrations/confident.svg" alt="" className="mx-auto w-full max-w-[280px] sm:max-w-xs" />
+          <img src="/illustrations/team-spirit.svg" alt="" className="mx-auto w-full max-w-[280px] sm:max-w-xs" />
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
