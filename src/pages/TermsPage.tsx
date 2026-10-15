@@ -8,7 +8,7 @@ export function TermsPage() {
       </LegalSection>
 
       <LegalSection title="2. Naturaleza del servicio">
-        <p>Trive Technologies SAS opera exclusivamente como una plataforma tecnológica de intermediación que facilita la conexión entre particulares que deseen compartir un vehículo y los costos de un trayecto.</p>
+        <p>Jormelia Soft opera exclusivamente como una plataforma tecnológica de intermediación que facilita la conexión entre particulares que deseen compartir un vehículo y los costos de un trayecto.</p>
         <p className="mt-3">Trive no es una empresa de transporte público, privado colectivo ni individual, ni presta servicios de taxi o similares. Las rutas publicadas corresponden a viajes que los conductores ya tienen planeado realizar, en los cuales ofrecen puestos disponibles a otros usuarios para compartir gastos de desplazamiento.</p>
         <p className="mt-3">Las rutas personalizadas (aeropuerto o particulares) son solicitudes de trayecto publicadas por pasajeros y aceptadas por conductores. Trive no fija el precio de estos trayectos, no participa en su ejecución y no es parte del acuerdo entre pasajero y conductor.</p>
       </LegalSection>
@@ -103,7 +103,7 @@ export function TermsPage() {
       </LegalSection>
 
       <LegalSection title="11. Propiedad intelectual">
-        Todos los derechos sobre la marca Trive, su diseño, código fuente y contenidos de la Plataforma pertenecen a Trive Technologies SAS. Queda prohibida su reproducción, distribución o uso no autorizado.
+        Todos los derechos sobre la marca Trive, su diseño, código fuente y contenidos de la Plataforma pertenecen a Jormelia Soft. Queda prohibida su reproducción, distribución o uso no autorizado.
       </LegalSection>
 
       <LegalSection title="12. Modificaciones">

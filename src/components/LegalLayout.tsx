@@ -6,7 +6,7 @@ export function LegalLayout({ title, subtitle, date, children }: { title: string
       <div className="text-center">
         <img src="/trive-icon.png" alt="" width={56} height={56} className="mx-auto rounded-2xl" />
         <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-text-primary sm:text-3xl">{title}</h1>
-        <p className="mt-1 text-sm font-bold text-trive-primary">Trive Technologies SAS</p>
+        <p className="mt-1 text-sm font-bold text-trive-primary">Jormelia Soft</p>
         {subtitle && <p className="text-xs text-text-muted">{subtitle}</p>}
         <p className="text-xs text-text-muted">Última actualización: {date}</p>
       </div>

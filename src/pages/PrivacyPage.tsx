@@ -4,7 +4,7 @@ export function PrivacyPage() {
   return (
     <LegalLayout title="Política de Privacidad" subtitle="Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013" date="20 de mayo de 2026">
       <LegalSection title="1. Responsable del tratamiento">
-        <p><strong className="text-text-primary">Trive Technologies SAS</strong></p>
+        <p><strong className="text-text-primary">Jormelia Soft</strong></p>
         <p>Ciudad: Cali, Colombia</p>
         <p>Correo: privacy@trivesoft.com</p>
       </LegalSection>

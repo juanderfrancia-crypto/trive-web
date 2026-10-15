@@ -42,7 +42,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-border-subtle pt-6 text-xs text-text-muted">
-          © {new Date().getFullYear()} Trive Technologies SAS. Trive es una plataforma tecnológica de intermediación; no es una empresa de transporte.
+          © {new Date().getFullYear()} Jormelia Soft. Trive es una plataforma tecnológica de intermediación; no es una empresa de transporte.
         </div>
       </div>
     </footer>
