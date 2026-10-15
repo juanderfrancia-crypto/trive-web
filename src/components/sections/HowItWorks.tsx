@@ -41,14 +41,12 @@ export function HowItWorks() {
         {STEPS.map((step, i) => (
           <div
             key={step.title}
-            className="relative overflow-hidden rounded-3xl border border-border-subtle bg-surface p-6 shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)] transition-transform duration-200 hover:-translate-y-1"
+            className="overflow-hidden rounded-3xl border border-border-subtle bg-surface shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)] transition-transform duration-200 hover:-translate-y-1"
           >
-            <img
-              src={step.illustration}
-              alt=""
-              className="pointer-events-none absolute -right-8 -top-8 w-28 opacity-35"
-            />
-            <div className="relative">
+            <div className="flex h-36 items-center justify-center bg-trive-tint/50">
+              <img src={step.illustration} alt="" className="h-28 w-auto object-contain" />
+            </div>
+            <div className="p-6">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-trive-tint text-trive-primary">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   {step.icon}
