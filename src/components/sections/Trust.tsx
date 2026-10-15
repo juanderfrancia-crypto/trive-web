@@ -1,3 +1,5 @@
+import { Reveal } from '../Reveal'
+
 const ITEMS = [
   {
     title: 'Conductores verificados',
@@ -20,7 +22,7 @@ export function Trust() {
   return (
     <section id="confianza" className="bg-surface-alt">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
+        <Reveal className="grid items-center gap-10 lg:grid-cols-2">
           <div>
             <h2 className="text-3xl font-extrabold tracking-tight text-text-primary [text-shadow:0_1px_1px_rgba(15,26,46,0.08)] sm:text-4xl">Confianza entre personas reales</h2>
             <p className="mt-3 max-w-md text-text-secondary">
@@ -28,9 +30,9 @@ export function Trust() {
             </p>
           </div>
           <img src="/illustrations/team-spirit.svg" alt="" className="mx-auto w-full max-w-[280px] sm:max-w-xs" />
-        </div>
+        </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+        <Reveal className="mt-12 grid gap-6 sm:grid-cols-3">
           {ITEMS.map((item) => (
             <div
               key={item.title}
@@ -45,7 +47,7 @@ export function Trust() {
               </div>
             </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   )

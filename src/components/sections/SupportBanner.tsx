@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
-import { supabase } from '../../lib/supabase'
+import { getSupabase } from '../../lib/supabase'
+import { Reveal } from '../Reveal'
 
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
@@ -16,6 +17,7 @@ export function SupportBanner() {
     setStatus('loading')
     setErrorMsg('')
 
+    const supabase = await getSupabase()
     const { error } = await supabase.functions.invoke('send-contact-message', {
       body: { name: name.trim(), email: email.trim(), message: message.trim() },
     })
@@ -30,7 +32,7 @@ export function SupportBanner() {
 
   return (
     <section className="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
-      <div className="rounded-2xl bg-trive-tint px-6 py-5">
+      <Reveal className="rounded-2xl bg-trive-tint px-6 py-5">
         <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
           <div className="flex items-center gap-3">
             <span className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-full bg-surface text-trive-primary sm:flex">
@@ -103,7 +105,7 @@ export function SupportBanner() {
             ¡Listo! Recibimos tu mensaje y te responderemos lo antes posible.
           </p>
         )}
-      </div>
+      </Reveal>
     </section>
   )
 }

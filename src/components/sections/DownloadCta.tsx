@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { supabase } from '../../lib/supabase'
+import { getSupabase } from '../../lib/supabase'
 
 type Status = 'idle' | 'loading' | 'success' | 'duplicate' | 'error'
 
@@ -11,6 +11,7 @@ export function DownloadCta() {
     e.preventDefault()
     setStatus('loading')
 
+    const supabase = await getSupabase()
     const { error } = await supabase.from('launch_notify_subscribers').insert({ email: email.trim() })
 
     if (!error) {

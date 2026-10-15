@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Reveal } from '../Reveal'
 
 const FAQS = [
   {
@@ -40,7 +41,7 @@ export function Faq() {
         <h2 className="text-3xl font-extrabold tracking-tight text-text-primary [text-shadow:0_1px_1px_rgba(15,26,46,0.08)] sm:text-4xl">Preguntas frecuentes</h2>
       </div>
 
-      <div className="mt-10 divide-y divide-border-subtle rounded-3xl border border-border-subtle bg-surface shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)]">
+      <Reveal className="mt-10 divide-y divide-border-subtle rounded-3xl border border-border-subtle bg-surface shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)]">
         {FAQS.map((item, i) => {
           const isOpen = openIndex === i
           return (
@@ -73,7 +74,7 @@ export function Faq() {
             </div>
           )
         })}
-      </div>
+      </Reveal>
     </section>
   )
 }

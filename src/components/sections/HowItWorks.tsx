@@ -1,3 +1,5 @@
+import { Reveal } from '../Reveal'
+
 const STEPS = [
   {
     title: 'Publica o busca tu ruta',
@@ -24,7 +26,7 @@ export function HowItWorks() {
         <p className="mt-3 text-text-secondary">Tres pasos, sin complicaciones.</p>
       </div>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-3">
+      <Reveal className="mt-12 grid gap-6 sm:grid-cols-3">
         {STEPS.map((step, i) => (
           <div
             key={step.title}
@@ -40,7 +42,7 @@ export function HowItWorks() {
             </div>
           </div>
         ))}
-      </div>
+      </Reveal>
     </section>
   )
 }
