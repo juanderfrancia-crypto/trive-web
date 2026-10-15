@@ -22,11 +22,14 @@ export function Trust() {
   return (
     <section id="confianza" className="bg-surface-alt">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
-        <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Confianza entre personas reales</h2>
-          <p className="mt-3 text-text-secondary">
-            Trive no presta el servicio de transporte — son los conductores quienes lo hacen. Esto es lo que revisamos antes de que alguien pueda publicar una ruta.
-          </p>
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <h2 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Confianza entre personas reales</h2>
+            <p className="mt-3 max-w-md text-text-secondary">
+              Trive no presta el servicio de transporte — son los conductores quienes lo hacen. Esto es lo que revisamos antes de que alguien pueda publicar una ruta.
+            </p>
+          </div>
+          <img src="/illustrations/confident.svg" alt="" className="mx-auto w-full max-w-[280px] sm:max-w-xs" />
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
