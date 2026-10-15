@@ -2,6 +2,7 @@ const STEPS = [
   {
     title: 'Publica o busca tu ruta',
     body: 'Los conductores publican trayectos que ya van a hacer. Los pasajeros buscan el que les sirve por fecha y lugar de encuentro.',
+    illustration: '/illustrations/searching.svg',
     icon: (
       <path d="M9 20H5a2 2 0 0 1-2-2V9l9-7 9 7v9a2 2 0 0 1-2 2h-4M9 20v-6h6v6M9 20h6" />
     ),
@@ -9,6 +10,7 @@ const STEPS = [
   {
     title: 'Conecta y acuerden los detalles',
     body: 'Hablen por el chat dentro de la app: punto de encuentro, hora y el valor que le corresponde a cada quien.',
+    illustration: '/illustrations/chatting.svg',
     icon: (
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z" />
     ),
@@ -16,6 +18,7 @@ const STEPS = [
   {
     title: 'Viajen compartiendo el gasto',
     body: 'El conductor ya iba a hacer ese trayecto. El pasajero aporta una parte justa del costo: combustible, peajes y desgaste.',
+    illustration: '/illustrations/payments.svg',
     icon: (
       <>
         <circle cx="7" cy="18" r="2" />
@@ -38,16 +41,23 @@ export function HowItWorks() {
         {STEPS.map((step, i) => (
           <div
             key={step.title}
-            className="rounded-3xl border border-border-subtle bg-surface p-6 shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)] transition-transform duration-200 hover:-translate-y-1"
+            className="relative overflow-hidden rounded-3xl border border-border-subtle bg-surface p-6 shadow-[0_20px_40px_-20px_rgba(15,26,46,0.15)] transition-transform duration-200 hover:-translate-y-1"
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-trive-tint text-trive-primary">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                {step.icon}
-              </svg>
+            <img
+              src={step.illustration}
+              alt=""
+              className="pointer-events-none absolute -bottom-10 -right-12 w-48 opacity-[0.08]"
+            />
+            <div className="relative">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-trive-tint text-trive-primary">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  {step.icon}
+                </svg>
+              </div>
+              <span className="mt-4 block text-xs font-bold text-text-muted">Paso {i + 1}</span>
+              <h3 className="mt-1 text-lg font-bold text-text-primary">{step.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-text-secondary">{step.body}</p>
             </div>
-            <span className="mt-4 block text-xs font-bold text-text-muted">Paso {i + 1}</span>
-            <h3 className="mt-1 text-lg font-bold text-text-primary">{step.title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-text-secondary">{step.body}</p>
           </div>
         ))}
       </div>
