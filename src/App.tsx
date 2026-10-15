@@ -8,6 +8,7 @@ import { HomePage } from './pages/HomePage'
 
 const TermsPage = lazy(() => import('./pages/TermsPage').then((m) => ({ default: m.TermsPage })))
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage').then((m) => ({ default: m.PrivacyPage })))
+const DeleteAccountPage = lazy(() => import('./pages/DeleteAccountPage').then((m) => ({ default: m.DeleteAccountPage })))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then((m) => ({ default: m.NotFoundPage })))
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/terminos" element={<TermsPage />} />
               <Route path="/privacidad" element={<PrivacyPage />} />
+              <Route path="/eliminar-cuenta" element={<DeleteAccountPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>

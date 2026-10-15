@@ -29,6 +29,7 @@ export function Footer() {
             <ul className="mt-3 space-y-2 text-sm">
               <li><Link to="/terminos" className="text-text-secondary hover:text-trive-primary">Términos de uso</Link></li>
               <li><Link to="/privacidad" className="text-text-secondary hover:text-trive-primary">Política de privacidad</Link></li>
+              <li><Link to="/eliminar-cuenta" className="text-text-secondary hover:text-trive-primary">Eliminar cuenta</Link></li>
             </ul>
           </div>
 
