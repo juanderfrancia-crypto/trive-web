@@ -71,7 +71,8 @@ export function PrivacyPage() {
         <p>Trive utiliza los siguientes proveedores tecnológicos que pueden acceder a tus datos como encargados del tratamiento:</p>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li><strong className="text-text-primary">Supabase Inc.</strong> — infraestructura de base de datos y autenticación. Servidores en Estados Unidos, bajo acuerdos de protección de datos compatibles con estándares internacionales.</li>
-          <li><strong className="text-text-primary">Expo (Expo Inc.)</strong> — envío de notificaciones push.</li>
+          <li><strong className="text-text-primary">Expo (Expo Inc.)</strong> y <strong className="text-text-primary">Google Firebase</strong> — envío de notificaciones push.</li>
+          <li><strong className="text-text-primary">Wompi S.A. (Bancolombia)</strong> — procesamiento de pagos y recargas de saldo. Trive no almacena datos de tarjetas ni cuentas bancarias; esa información la maneja directamente Wompi.</li>
         </ul>
         <p className="mt-3">No vendemos, arrendamos ni cedemos tus datos a terceros con fines comerciales.</p>
       </LegalSection>
