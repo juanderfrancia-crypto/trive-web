@@ -9,7 +9,7 @@ export function PrivacyPage() {
         description="Cómo Trive recopila, usa y protege tus datos personales, conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia."
         path="/privacidad"
       />
-      <LegalLayout title="Política de Privacidad" subtitle="Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013" date="20 de mayo de 2026">
+      <LegalLayout title="Política de Privacidad" subtitle="Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013" date="11 de noviembre de 2026">
       <LegalSection title="1. Responsable del tratamiento">
         <p><strong className="text-text-primary">Jormelia Soft</strong></p>
         <p>Ciudad: Cali, Colombia</p>
@@ -26,6 +26,7 @@ export function PrivacyPage() {
           <li><strong className="text-text-primary">Fotografía de perfil:</strong> de forma opcional, cargada por el usuario.</li>
           <li><strong className="text-text-primary">Datos del programa de referidos (conductores):</strong> código de referido generado por la Plataforma para cada conductor activo y, en caso de aplicar, el código del conductor que lo refirió. Estos datos se utilizan exclusivamente para calcular y acreditar los beneficios del programa de referidos.</li>
           <li><strong className="text-text-primary">Datos de solicitudes de viaje al aeropuerto (pasajeros):</strong> origen del recorrido, aeropuerto de destino, fecha y hora de vuelo, número de pasajeros, precio ofrecido y notas opcionales. Estos datos son visibles para los conductores verificados de la Plataforma con el fin de facilitar la aceptación del viaje.</li>
+          <li><strong className="text-text-primary">Número de cédula:</strong> obligatorio para todos los usuarios, para verificar tu identidad y evitar cuentas duplicadas.</li>
         </ul>
       </LegalSection>
 
@@ -40,6 +41,7 @@ export function PrivacyPage() {
           <li>Calcular calificaciones y reputación de usuarios.</li>
           <li>Gestionar el programa de referidos entre conductores y acreditar los beneficios correspondientes.</li>
           <li>Conectar pasajeros con conductores para solicitudes de viaje al aeropuerto, mostrando la información de la solicitud a conductores verificados.</li>
+          <li>Verificar tu identidad y prevenir cuentas duplicadas.</li>
           <li>Mejorar la Plataforma mediante análisis estadísticos anonimizados.</li>
           <li>Cumplir obligaciones legales vigentes.</li>
         </ul>
@@ -83,6 +85,7 @@ export function PrivacyPage() {
           <li>Cifrado de datos en tránsito mediante HTTPS/TLS.</li>
           <li>Autenticación segura mediante OTP y tokens de sesión.</li>
           <li>Acceso restringido a datos personales según rol de usuario.</li>
+          <li>Verificación de identidad adicional en dispositivos nuevos y sesión única por cuenta.</li>
           <li>Políticas de seguridad internas para el equipo de Trive.</li>
         </ul>
       </LegalSection>

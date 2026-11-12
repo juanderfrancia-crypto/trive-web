@@ -9,7 +9,7 @@ export function TermsPage() {
         description="Términos de uso de la plataforma Trive: cómo funciona la publicación de rutas, las reservas de cupo y la relación entre conductores y pasajeros."
         path="/terminos"
       />
-      <LegalLayout title="Términos de Uso" date="6 de octubre de 2026">
+      <LegalLayout title="Términos de Uso" date="11 de noviembre de 2026">
       <LegalSection title="1. Aceptación de los términos">
         Al descargar, instalar o utilizar la aplicación Trive, declaras haber leído, entendido y aceptado estos Términos de Uso en su totalidad. Si no estás de acuerdo con alguno de estos términos, debes abstenerte de utilizar la Plataforma.
       </LegalSection>
@@ -26,12 +26,14 @@ export function TermsPage() {
           <li>Ser mayor de 18 años.</li>
           <li>Proporcionar información veraz, completa y actualizada.</li>
           <li>Contar con un número de teléfono celular activo en Colombia.</li>
+          <li>Contar con cédula de ciudadanía vigente.</li>
           <li>Aceptar el tratamiento de tus datos conforme a nuestra Política de Privacidad.</li>
         </ul>
       </LegalSection>
 
       <LegalSection title="4. Registro y cuenta">
-        Eres responsable de mantener la confidencialidad de tu cuenta y de todas las actividades realizadas desde ella. Debes notificarnos de inmediato ante cualquier uso no autorizado escribiendo a privacy@trivesoft.com.
+        <p>Eres responsable de mantener la confidencialidad de tu cuenta y de todas las actividades realizadas desde ella. Debes notificarnos de inmediato ante cualquier uso no autorizado escribiendo a privacy@trivesoft.com.</p>
+        <p className="mt-3">Cada persona puede tener únicamente una cuenta en Trive, verificada por celular y cédula. Usar más de una cuenta a nombre de la misma persona da lugar a la suspensión de las cuentas involucradas.</p>
       </LegalSection>
 
       <LegalSection title="5. Conductores">
