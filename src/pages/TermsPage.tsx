@@ -9,7 +9,7 @@ export function TermsPage() {
         description="Términos de uso de la plataforma Trive: cómo funciona la publicación de rutas, las reservas de cupo y la relación entre conductores y pasajeros."
         path="/terminos"
       />
-      <LegalLayout title="Términos de Uso" date="11 de noviembre de 2026">
+      <LegalLayout title="Términos de Uso" date="17 de noviembre de 2026">
       <LegalSection title="1. Aceptación de los términos">
         Al descargar, instalar o utilizar la aplicación Trive, declaras haber leído, entendido y aceptado estos Términos de Uso en su totalidad. Si no estás de acuerdo con alguno de estos términos, debes abstenerte de utilizar la Plataforma.
       </LegalSection>
@@ -112,7 +112,7 @@ export function TermsPage() {
       </LegalSection>
 
       <LegalSection title="11. Propiedad intelectual">
-        Todos los derechos sobre la marca Trive, su diseño, código fuente y contenidos de la Plataforma pertenecen a Jormelia Soft. Queda prohibida su reproducción, distribución o uso no autorizado.
+        La marca Trive, su diseño, código fuente y contenidos de la Plataforma son de titularidad de <strong className="text-text-primary">Jhan Carlos Sánchez Banguero</strong>, su creador, quien ha autorizado su explotación comercial a <strong className="text-text-primary">JORMELIA SOFT S.A.S.</strong> para operar y comercializar la Plataforma. Queda prohibida su reproducción, distribución o uso no autorizado.
       </LegalSection>
 
       <LegalSection title="12. Modificaciones">

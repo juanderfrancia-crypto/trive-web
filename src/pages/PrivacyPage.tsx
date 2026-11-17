@@ -9,10 +9,10 @@ export function PrivacyPage() {
         description="Cómo Trive recopila, usa y protege tus datos personales, conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia."
         path="/privacidad"
       />
-      <LegalLayout title="Política de Privacidad" subtitle="Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013" date="11 de noviembre de 2026">
+      <LegalLayout title="Política de Privacidad" subtitle="Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013" date="17 de noviembre de 2026">
       <LegalSection title="1. Responsable del tratamiento">
-        <p><strong className="text-text-primary">Jormelia Soft</strong></p>
-        <p>Ciudad: Cali, Colombia</p>
+        <p>Esta aplicación es desarrollada y publicada por <strong className="text-text-primary">Jhan Carlos Sánchez Banguero</strong>, persona natural y desarrollador titular de la cuenta en las tiendas de aplicaciones (Google Play y Huawei AppGallery), quien opera en alianza y respaldo operativo de <strong className="text-text-primary">JORMELIA SOFT S.A.S.</strong> (NIT 902.118.595-0), domiciliada en Jamundí, Valle del Cauca, de la cual es Representante Legal.</p>
+        <p>Para efectos de la Ley 1581 de 2012 y el Decreto 1377 de 2013, ambos actúan de manera coordinada como Responsables del Tratamiento.</p>
         <p>Correo: privacy@trivesoft.com</p>
       </LegalSection>
 
