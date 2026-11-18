@@ -11,6 +11,10 @@ const FAQS = [
     a: 'Buscas tu ruta, ves los cupos disponibles en tiempo real, eliges el tuyo y confirmas la reserva al instante. Después usas el chat de la app para coordinar el punto exacto de encuentro con el conductor.',
   },
   {
+    q: '¿Y si ningún conductor publicó la ruta que necesito?',
+    a: 'Puedes publicar tú una ruta personalizada: indicas tu origen, tu destino y cuánto estás dispuesto a pagar, y los conductores cercanos te hacen ofertas. Tú eliges con cuál viajar.',
+  },
+  {
     q: '¿Cómo se fija el precio del viaje?',
     a: 'El conductor lo define libremente al publicar la ruta. El precio por cupo queda fijo desde la publicación — Trive no lo negocia ni lo cambia.',
   },

@@ -12,17 +12,17 @@ export function Coverage() {
           </span>
           <h2 className="mt-4 text-2xl font-extrabold text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-3xl">Funciona en toda Colombia</h2>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-white/80">
-            Cualquier conductor puede publicar cualquier ruta, a cualquier destino — no hay un corredor fijo. Hoy la mayor actividad está entre Puerto Tejada y Cali, pero la comunidad sigue creciendo.
+            Cualquier conductor puede publicar cualquier ruta, a cualquier destino — no hay un corredor fijo. Hoy la mayor actividad está concentrada en el norte del Cauca, pero la comunidad sigue creciendo.
           </p>
         </div>
         <ul className="relative z-10 grid grid-cols-2 gap-3">
-          {['Puerto Tejada', 'Cali'].map((city) => (
-            <li key={city} className="flex items-center gap-2 rounded-2xl bg-white/10 px-4 py-3.5 text-sm font-bold text-white">
+          {['Ciudades', 'Municipios'].map((tag) => (
+            <li key={tag} className="flex items-center gap-2 rounded-2xl bg-white/10 px-4 py-3.5 text-sm font-bold text-white">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z" />
                 <circle cx="12" cy="10" r="2.5" />
               </svg>
-              {city}
+              {tag}
             </li>
           ))}
         </ul>
