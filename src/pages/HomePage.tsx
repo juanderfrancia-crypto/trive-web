@@ -3,6 +3,7 @@ import { Hero } from '../components/sections/Hero'
 import { HowItWorks } from '../components/sections/HowItWorks'
 import { AppPreview } from '../components/sections/AppPreview'
 import { Trust } from '../components/sections/Trust'
+import { DriverCta } from '../components/sections/DriverCta'
 import { Coverage } from '../components/sections/Coverage'
 import { Faq } from '../components/sections/Faq'
 import { SupportBanner } from '../components/sections/SupportBanner'
@@ -20,6 +21,7 @@ export function HomePage() {
       <HowItWorks />
       <AppPreview />
       <Trust />
+      <DriverCta />
       <Coverage />
       <Faq />
       <SupportBanner />
