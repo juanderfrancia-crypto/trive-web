@@ -8,11 +8,11 @@ export function Coverage() {
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-trive-primary/85" />
         <div className="relative z-10">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[11px] font-bold text-white">
-            Dónde operamos hoy
+            Cobertura
           </span>
-          <h2 className="mt-4 text-2xl font-extrabold text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-3xl">Puerto Tejada y Cali, por ahora</h2>
+          <h2 className="mt-4 text-2xl font-extrabold text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-3xl">Funciona en toda Colombia</h2>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-white/80">
-            Trive está en una etapa inicial, conectando a quienes viajan entre Puerto Tejada y Cali, y sus alrededores. La idea es llegar a más rutas a medida que la comunidad crece.
+            Cualquier conductor puede publicar cualquier ruta, a cualquier destino — no hay un corredor fijo. Hoy la mayor actividad está entre Puerto Tejada y Cali, pero la comunidad sigue creciendo.
           </p>
         </div>
         <ul className="relative z-10 grid grid-cols-2 gap-3">

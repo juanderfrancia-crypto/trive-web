@@ -13,7 +13,7 @@ export function HomePage() {
     <>
       <Seo
         title="Trive — Publica tu ruta, reserva tu cupo"
-        description="Trive conecta conductores y pasajeros verificados en Puerto Tejada y Cali. Publica tu ruta o reserva tu cupo, con precio fijo y confirmación al instante."
+        description="Trive, la app de viajes compartidos en Colombia. Conecta conductores y pasajeros verificados en cualquier ruta. Publica tu ruta o reserva tu cupo, con precio fijo y confirmación al instante."
         path="/"
       />
       <Hero />

@@ -1,26 +1,29 @@
-import { useState, type FormEvent } from 'react'
-import { getSupabase } from '../../lib/supabase'
-
-type Status = 'idle' | 'loading' | 'success' | 'duplicate' | 'error'
+const STORES = [
+  {
+    name: 'Google Play',
+    href: 'https://play.google.com/store/apps/details?id=com.trivesoft.app',
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4.5 2.5c-.4.3-.6.8-.6 1.4v16.2c0 .6.2 1.1.6 1.4l9.2-9.5-9.2-9.5Z" fill="#00D9FF" />
+        <path d="M17 9.3 13.7 12l3.3 2.7 4-2.3c.7-.4.7-1.2 0-1.6l-4-2.5Z" fill="#FFD400" />
+        <path d="M4.5 2.5 13.7 12l3.3-2.7-11.2-7Z" fill="#00F076" />
+        <path d="M4.5 21.5 13.7 12l3.3 2.7-11.2 7Z" fill="#FF3A44" />
+      </svg>
+    ),
+  },
+  {
+    name: 'AppGallery',
+    href: 'https://appgallery.huawei.com/app/C119651811',
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="4" y="2" width="16" height="20" rx="3" />
+        <path d="M9 17h6" />
+      </svg>
+    ),
+  },
+]
 
 export function DownloadCta() {
-  const [email, setEmail] = useState('')
-  const [status, setStatus] = useState<Status>('idle')
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault()
-    setStatus('loading')
-
-    const supabase = await getSupabase()
-    const { error } = await supabase.from('launch_notify_subscribers').insert({ email: email.trim() })
-
-    if (!error) {
-      setStatus('success')
-      return
-    }
-    setStatus(error.code === '23505' ? 'duplicate' : 'error')
-  }
-
   return (
     <section id="descarga" className="relative overflow-hidden bg-trive-primary">
       <div
@@ -43,43 +46,33 @@ export function DownloadCta() {
         <div className="text-center lg:order-2 lg:text-left">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-bold text-white">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <rect x="5" y="2" width="14" height="20" rx="2" />
-              <path d="M12 18h.01" />
+              <path d="M20 6 9 17l-5-5" />
             </svg>
-            Muy pronto en Google Play
+            Ya disponible
           </span>
 
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-4xl">No te quedes por fuera del lanzamiento</h2>
+          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.25)] sm:text-4xl">Descarga Trive y empieza a viajar</h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-white/80 sm:mx-0 sm:text-lg mx-auto">
-            Estamos en la etapa final de pruebas. Déjanos tu correo y te avisamos apenas la app esté disponible para descargar.
+            Disponible para Android en Google Play y Huawei AppGallery. Busca tu ruta o publica la tuya en minutos.
           </p>
 
-          <div className="mt-7 rounded-2xl bg-white p-2 shadow-[0_24px_48px_-16px_rgba(8,45,102,0.45)] sm:max-w-md">
-            {status === 'success' || status === 'duplicate' ? (
-              <p className="px-4 py-3 text-sm font-bold text-trive-primary">
-                {status === 'success' ? '¡Listo! Te avisaremos apenas esté disponible.' : 'Ese correo ya está en la lista — te avisaremos.'}
-              </p>
-            ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-2 sm:flex-row">
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="tu@correo.com"
-                  className="w-full rounded-xl px-4 py-3 text-sm text-text-primary outline-none"
-                />
-                <button
-                  type="submit"
-                  disabled={status === 'loading'}
-                  className="shrink-0 rounded-xl bg-trive-primary px-6 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-trive-dark disabled:opacity-60"
-                >
-                  {status === 'loading' ? 'Enviando…' : 'Avísame'}
-                </button>
-              </form>
-            )}
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+            {STORES.map((store) => (
+              <a
+                key={store.name}
+                href={store.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 rounded-2xl bg-white px-6 py-3.5 shadow-[0_24px_48px_-16px_rgba(8,45,102,0.45)] transition-transform duration-200 hover:scale-[1.03]"
+              >
+                <span className="text-trive-primary">{store.icon}</span>
+                <span className="flex flex-col text-left leading-tight">
+                  <span className="text-[11px] font-semibold text-text-secondary">Disponible en</span>
+                  <span className="text-sm font-extrabold text-text-primary">{store.name}</span>
+                </span>
+              </a>
+            ))}
           </div>
-          {status === 'error' && <p className="mt-3 text-xs font-semibold text-red-200">No pudimos guardar tu correo. Intenta de nuevo.</p>}
         </div>
       </div>
     </section>

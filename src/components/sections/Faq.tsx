@@ -24,11 +24,11 @@ const FAQS = [
   },
   {
     q: '¿Dónde está disponible Trive?',
-    a: 'Por ahora, en trayectos entre Puerto Tejada y Cali, y sus alrededores. Iremos sumando más rutas a medida que la comunidad crece.',
+    a: 'En toda Colombia. Cualquier conductor puede publicar cualquier ruta, a cualquier destino — no estamos limitados a un solo corredor.',
   },
   {
     q: '¿Cuándo puedo descargar la app?',
-    a: 'Estamos en la etapa final de pruebas antes de publicarla en Google Play. Déjanos tus datos en la sección de descarga para avisarte apenas esté disponible.',
+    a: 'Ya está disponible para Android en Google Play y Huawei AppGallery. Puedes descargarla ahora mismo desde los botones de esta página.',
   },
 ]
 
