@@ -55,6 +55,10 @@ export function ResetPasswordPage() {
       setStage('ready')
       return
     }
+    // Marca que esta cuenta ya tiene una contraseña real -- así la app sabe
+    // que debe mostrarle "Cambiar/Recuperar contraseña" aunque se registró
+    // originalmente solo por teléfono.
+    await supabase.rpc('mark_password_set')
     setStage('success')
   }
 
