@@ -75,6 +75,7 @@ export function PrivacyPage() {
           <li><strong className="text-text-primary">Supabase Inc.</strong> — infraestructura de base de datos y autenticación. Servidores en Estados Unidos, bajo acuerdos de protección de datos compatibles con estándares internacionales.</li>
           <li><strong className="text-text-primary">Expo (Expo Inc.)</strong> y <strong className="text-text-primary">Google Firebase</strong> — envío de notificaciones push.</li>
           <li><strong className="text-text-primary">Wompi S.A. (Bancolombia)</strong> — procesamiento de pagos y recargas de saldo. Trive no almacena datos de tarjetas ni cuentas bancarias; esa información la maneja directamente Wompi.</li>
+          <li><strong className="text-text-primary">Twilio Inc.</strong> — envío de códigos de verificación (OTP) por mensaje de texto.</li>
         </ul>
         <p className="mt-3">No vendemos, arrendamos ni cedemos tus datos a terceros con fines comerciales.</p>
       </LegalSection>
@@ -91,7 +92,7 @@ export function PrivacyPage() {
       </LegalSection>
 
       <LegalSection title="8. Retención de datos">
-        Tus datos se conservarán mientras tu cuenta esté activa. Al eliminar tu cuenta, tus datos serán suprimidos en un plazo máximo de <strong className="text-text-primary">30 días calendario</strong>, salvo obligación legal de conservarlos por un período mayor.
+        Tus datos se conservarán mientras tu cuenta esté activa. Al eliminar tu cuenta, tus datos personales se eliminan o anonimizan de inmediato en los sistemas activos de la Plataforma. Las copias de respaldo que puedan conservarlos se purgan en un plazo máximo de <strong className="text-text-primary">30 días calendario</strong>, salvo obligación legal de conservarlos por un período mayor.
       </LegalSection>
 
       <LegalSection title="9. Menores de edad">

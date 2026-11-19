@@ -91,7 +91,7 @@ export function TermsPage() {
       <LegalSection title="9. Conducta prohibida">
         <p>Está terminantemente prohibido:</p>
         <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Utilizar la Plataforma para ofrecer servicio de taxi o de transporte público, o para ofrecer trayectos de forma habitual como actividad de transporte.</li>
+          <li>Utilizar la Plataforma para ofrecer servicio de taxi, transporte público, o cualquier servicio de transporte remunerado por fuera del modelo de compartición de gastos que describen estos Términos.</li>
           <li>Publicar información falsa o engañosa.</li>
           <li>Discriminar a otros usuarios por razón de raza, sexo, religión, orientación sexual u otra condición.</li>
           <li>Realizar actividades ilícitas durante los trayectos.</li>
